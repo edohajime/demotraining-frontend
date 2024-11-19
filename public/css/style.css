@@ -1,0 +1,274 @@
+body {
+    background-color: gray;
+}
+
+body,
+button,
+input {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.error {
+    margin: 0 auto 10px auto;
+    border: 1px solid red;
+    width: 80%;
+    background-color: #d79797;
+    padding: 7px;
+    color: #fbdede;
+}
+
+.container {
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 500px;
+    min-height: 320px;
+    text-align: center;
+}
+
+input#username,
+input#password,
+input#confirm_password {
+    width: 80%;
+    height: 40px;
+    padding: 7px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 80%;
+    height: 40px;
+    padding: 7px;
+    font-size: 1rem;
+    margin: 0 auto 10px auto;
+}
+
+textarea.form-input {
+    min-height: 100px;
+    font-family: sans-serif;
+}
+
+.input-username {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto 10px auto;
+    padding: 7px;
+    border: .5px solid rgba(118, 118, 118, 0.3);
+    border-radius: 2px;
+    background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(59, 59, 59, 0.3));
+    align-items: center;
+    color: rgb(118 118 118 / 58%);
+}
+
+button.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+/* index.html */
+p.current-username {
+    width: 115px;
+    text-align: left;
+}
+
+.top-right-btns {
+    display: flex;
+    gap: 5px;
+}
+
+.update-profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 18px;
+    padding: 8px 15px 8px 15px;
+    gap: 8px;
+    border: 1px solid gray;
+    color: black;
+}
+
+a.update-profile-option {
+    position: absolute;
+    display: none;
+    padding: 8px 0;
+    border: 1px solid gray;
+    background: gray;
+    color: white !important;
+    top: 32px;
+    left: -1px;
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+
+.update-profile:hover a.update-profile-option {
+    display: block;
+}
+
+img.caret-down-solid {
+    width: 1rem;
+    height: .9rem;
+}
+
+.update-profile a {
+    color: gray;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header-title {
+    text-transform: uppercase;
+}
+
+.users {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid;
+}
+
+p.username {
+    width: 62%;
+    text-align: left;
+}
+
+p.user-info {
+    text-align: left;
+}
+
+.action {
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.action-add {
+    background-color: green;
+    padding: 8px 15px;
+}
+
+button.action.search {
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+
+input#searchName.search {
+    width: 100%;
+    height: 24px;
+}
+
+.action-mod {
+    background-color: #d5af23;
+}
+
+.action-view {
+    background: blue;
+}
+
+a.action.action-mod.profile {
+    padding: 8px 15px;
+}
+
+.action-del {
+    background-color: gray;
+}
+
+.action-logout {
+    display: flex;
+    background-color: gray;
+    padding: 8px 15px;
+    border: none;
+    font-size: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    border: 1px solid;
+}
+
+.page-number-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.page-number.active {
+    background: gray;
+    color: white;
+}
+
+.page-number {
+    border: 1px solid gray;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+/* USER ACCOUNT */
+
+.user-avatar {
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border: 1px solid;
+}
+
+.user-info {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-info p {
+    margin: 10px;
+}
+
+a.action.action-logout.update-profile {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+a.action.action-logout.back {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
