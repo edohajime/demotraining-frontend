@@ -42,11 +42,14 @@ const Home = () => {
 
   const handleDel = (username) => {
     if (window.confirm(`Are you sure to remove user ${username}?`)) {
+      while (!isUnauthorized()) {
+        console.log("authorizing...")
+      }
       axios
         .get(`http://localhost:8081/del-user?username=${username}`)
         .then((res) => {
           if (res.data.status) {
-            loadUsers();
+            loadUsers(0);
             console.log(res.data.message);
             window.alert(res.data.message);
           }
